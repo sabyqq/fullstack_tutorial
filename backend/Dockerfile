@@ -1,4 +1,4 @@
-FROM docker.io/python
+FROM ubi8/python-36
 
 RUN mkdir /application
 WORKDIR /application
