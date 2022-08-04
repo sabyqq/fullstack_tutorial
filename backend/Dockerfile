@@ -7,8 +7,7 @@ COPY . .
 
 RUN python -m venv python_modules &&\
   source ./python_modules/bin/activate &&\
-  python -m pip install -r package-lock.txt &&\
-  deactivate
+  python -m pip install -r package-lock.txt
 
 EXPOSE 5000
 
