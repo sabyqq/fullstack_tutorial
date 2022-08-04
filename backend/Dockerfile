@@ -5,7 +5,7 @@ WORKDIR /application
 
 COPY . .
 
-RUN python3 -m venv python_modules &&\
+RUN python -m venv python_modules &&\
   source ./python_modules/bin/activate &&\
   python3 -m pip install -r package-lock.txt &&\
   deactivate
