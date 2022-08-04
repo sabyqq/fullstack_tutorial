@@ -12,4 +12,4 @@ RUN python -m venv python_modules &&\
 
 EXPOSE 5000
 
-CMD ["source", "./python_modules/bin/activate", "python", "main.py" , "deactivate"]
+CMD ["python", "main.py"]
