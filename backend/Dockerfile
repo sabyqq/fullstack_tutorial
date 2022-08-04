@@ -1,4 +1,4 @@
-FROM public.ecr.aws/ews-network/python:3.10
+FROM public.ecr.aws/ews-network/python:3.7.20220601
 
 RUN mkdir /application
 WORKDIR /application
