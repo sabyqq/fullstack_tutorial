@@ -5,7 +5,10 @@ WORKDIR /application
 
 COPY . .
 
-RUN ppm install
+RUN python3 -m venv python_modules &&\
+  source ./python_modules/bin/activate &&\
+  python3 -m pip install -r package-lock.txt &&\
+  deactivate
 
 EXPOSE 5000
 
