@@ -1,4 +1,4 @@
-FROM docker.io/library/python:3.6-slim
+FROM docker.io/python
 
 RUN mkdir /application
 WORKDIR /application
