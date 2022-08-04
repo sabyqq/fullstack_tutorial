@@ -12,4 +12,4 @@ RUN python -m venv python_modules &&\
 
 EXPOSE 5000
 
-CMD ["python", "main.py"]
+CMD ["python3", "main.py"]
