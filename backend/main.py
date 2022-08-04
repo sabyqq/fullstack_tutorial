@@ -12,7 +12,9 @@ from dbms.dict_db.model import Model
 app = Flask(__name__)
 # this essitial for Cross Origin Resource Sharing with React frontend
 # https://flask-cors.readthedocs.io/en/latest/
-CORS(app)   
+#CORS(app)   
+cors = CORS(app, resources={r"*": {"origins": "*"}})
+
 # use database
 model = Model()
 
