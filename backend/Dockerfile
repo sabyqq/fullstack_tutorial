@@ -11,4 +11,4 @@ RUN python -m venv python_modules &&\
 
 EXPOSE 5000
 
-CMD ["python", "main.py"]
+CMD ["source ./python_modules/bin/activate", "python main.py"]
