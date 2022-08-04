@@ -1,4 +1,4 @@
-FROM ubi8/python-36:1-188
+FROM public.ecr.aws/ews-network/python:3.10
 
 RUN mkdir /application
 WORKDIR /application
