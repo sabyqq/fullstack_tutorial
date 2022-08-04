@@ -11,4 +11,4 @@ RUN python -m venv python_modules &&\
 
 EXPOSE 5000
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["sh", "entrypoint.sh"]
