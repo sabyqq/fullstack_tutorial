@@ -39,8 +39,8 @@ class App extends React.Component {
 
   // ######################### click handler ###########################
   handleClick(event) {
-    const serverUrl = "http://backend:8000/keys";
-    const debugUrl = "http://backend:8000/debug";
+    const serverUrl = "http://backend-sabyq-project.apps.ap46a.prod.ole.redhat.com/keys";
+    const debugUrl = "http://backend-sabyq-project.apps.ap46a.prod.ole.redhat.com/debug";
     const buttonId = event.target.id;
     let state = this.state
     // ######################### create name ###########################
