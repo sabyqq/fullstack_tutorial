@@ -3,7 +3,7 @@
 # Description:
 #   an simple flask backend
 from flask import Flask, json, jsonify, request
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 ############################ Choose Models ############################
 # from dbms.json_db.model import Model
 from dbms.dict_db.model import Model
@@ -12,7 +12,7 @@ from dbms.dict_db.model import Model
 app = Flask(__name__)
 # this essitial for Cross Origin Resource Sharing with React frontend
 # https://flask-cors.readthedocs.io/en/latest/
-CORS(app)   
+CORS(app, origins=[“*”])   
 #cors = CORS(app, resources={r"*": {"origins": "*"}})
 
 # use database
@@ -37,6 +37,7 @@ def create_name():
 
 ############################## read name ###############################
 @app.route('/keys/<key>', methods = ["GET"])
+@cross_origin()
 def read_name(key):
     value = model.read(key)
     # not found
@@ -78,6 +79,7 @@ def delete_name(key):
 ############################# Debug Method #############################
 # print database
 @app.route('/debug', methods = ["GET"])
+@cross_origin()
 def print_database():
     database = model.debug()
     if (database is None):
