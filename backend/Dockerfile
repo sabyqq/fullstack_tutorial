@@ -1,4 +1,4 @@
-FROM ubi8/python-36
+FROM public.ecr.aws/alexaprizesharedresources/python:3.7-slim-buster
 
 RUN mkdir /application
 WORKDIR /application
