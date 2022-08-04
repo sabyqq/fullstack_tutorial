@@ -9,6 +9,6 @@ RUN python -m venv python_modules &&\
   source ./python_modules/bin/activate &&\
   python -m pip install -r package-lock.txt
 
-EXPOSE 5000
+EXPOSE 8000
 
 ENTRYPOINT ["sh", "entrypoint.sh"]
