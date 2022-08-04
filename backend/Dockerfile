@@ -1,4 +1,4 @@
-FROM ubi8/python-36
+FROM ubi8/python-36:1-188
 
 RUN mkdir /application
 WORKDIR /application
