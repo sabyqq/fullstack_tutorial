@@ -14,7 +14,7 @@ import {
 import './App.css';
 
 class App extends React.Component {
-  // ######################### initialzation ###########################
+  // ######################### initialzation ############################
   constructor(props) {
     super(props);
     this.state = {
